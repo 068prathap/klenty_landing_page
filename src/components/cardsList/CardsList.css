@@ -1,0 +1,10 @@
+.cardsHeading {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #0E0D59;
+}
+
+.cradsList{
+    gap: 23px;
+}

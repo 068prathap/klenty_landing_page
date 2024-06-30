@@ -1,0 +1,53 @@
+.cardContainer{
+    width: 281px;
+    cursor: pointer;
+}
+
+.cardImg{
+    width: 236px;
+    height: 163px;
+    transition: all 0.5s;
+}
+
+.arrowLink{
+    margin-left: 8px;
+}
+
+.cardContainer:hover .cardImg{
+    transform: scale(1.08);
+}
+
+.cardContainer:hover .arrowLink{
+    transform: translateX(4px);
+    transition: all 0.4s;
+}
+
+.cardImageContainer {
+    background: linear-gradient(331.89deg, #D5BBFF 12.21%, #3200F9 85.61%);
+    width: 281px;
+    height: 269px;
+    border-radius: 7.48px;
+    padding: 16px;
+}
+
+.cardImgHeading {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+}
+
+.cardContent {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #3D3C7D;
+}
+
+.cardLink {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #504EE4;
+}
+
