@@ -1,0 +1,21 @@
+.componentSix {
+    background: linear-gradient(180deg, #5452BE 0%, #161489 100%);
+}
+
+.buildHeading {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 69px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.buildButton {
+    width: 225px;
+    height: 56px;
+    padding: 14px 23.33px 14px 23.33px;
+    border-radius: 4px;
+    color: #ffffff;
+    border: none;
+    background: #4F95FF;
+}

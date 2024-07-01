@@ -1,0 +1,113 @@
+.componentFour {
+    background: linear-gradient(180deg, #302e9b 0%, #161489 100%), #f5f5ff;
+}
+
+.supportComponent {
+    background-image: url('../../assets/images/Mask\ group.png');
+    background-size: cover;
+}
+
+.supportHeading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    color: #3EC5FF;
+}
+
+.notHeading {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 633px;
+}
+
+.supportBoxList {
+    max-width: 980px;
+    gap: 24px;
+}
+
+.supportBox {
+    padding: 14px 33px 14px 20px;
+    background: #51CBFF1A;
+    gap: 16px;
+    border-radius: 8px;
+}
+
+.supportBoxText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.supportBoxIcon {
+    min-width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e44aa;
+    border-radius: 50%;
+}
+
+.securityComponent {
+    background-image: url('../../assets/images/Vector\ 1198.png');
+    background-size: cover;
+}
+
+.securityShield{
+    left: 0;
+    right: 0;
+    top: -65px;
+}
+
+.securityHeading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    color: #3EC5FF;
+}
+
+.enterpriceHeading {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.securityContent {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #9F9DED;
+}
+
+.securityList {
+    max-width: 1110px;
+    gap: 72px;
+}
+
+.securityBox{
+    text-align: center;
+}
+
+.securityTime {
+    font-size: 23.58px;
+    font-weight: 700;
+    line-height: 35.36px;
+    color: #FFFFFF;
+}
+
+.securityBoxContent {
+    font-size: 12.7px;
+    font-weight: 400;
+    line-height: 19.04px;
+    color: #9F9DED;
+}
