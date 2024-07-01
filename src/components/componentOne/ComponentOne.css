@@ -1,0 +1,41 @@
+.componentOne {
+    background: linear-gradient(360deg, #EFEEFF 0%, #FFFFFF 100%);
+}
+
+.uniqueHeading {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 69px;
+}
+
+.uniqueHeading>span {
+    font-size: 46px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 69px;
+    color: #0E0D59;
+}
+
+.b2bHeading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    color: #504EE4;
+}
+
+.conquerHeading {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    color: #0E0D59;
+}
+
+.klentyContent {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #2D2C76;
+}

@@ -8,7 +8,7 @@ function Header() {
                 <div className='d-flex innerHeader justify-content-between py-3 align-items-center'>
                     <div className='d-flex align-items-center w-75'>
                         <div className='me-3'>
-                            <img className='bigLogoImg' src={BigLogo} alt="" />
+                            {/* <img className='bigLogoImg' src={BigLogo} alt="" /> */}
                         </div>
                         <div className='d-flex'>
                             <div className='mx-3 position-relative'>
