@@ -4,6 +4,7 @@ import Banner from '../../components/banner/Banner';
 import CardsList from '../../components/cardsList/CardsList';
 import ComponentOne from '../../components/componentOne/ComponentOne';
 import ComponentTwo from '../../components/componentTwo/ComponentTwo';
+import ComponentThree from '../../components/componentThree/ComponentThree';
 
 function LandingPage() {
     return (
@@ -16,8 +17,11 @@ function LandingPage() {
             <div className='mb-5'>
                 <ComponentOne />
             </div>
-            <div className='mt-5'>
+            <div className='my-5'>
                 <ComponentTwo />
+            </div>
+            <div className='my-5'>
+                <ComponentThree />
             </div>
         </>
     )

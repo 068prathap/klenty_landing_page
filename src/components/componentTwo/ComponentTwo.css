@@ -1,3 +1,7 @@
+.innerMediaTabs{
+    width: 90%;
+}
+
 .multiHeading {
     font-size: 14px;
     font-weight: 600;
@@ -14,15 +18,26 @@
     color: #0E0D59;
 }
 
-.uniteContent{
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: center;
-color: #2D2C76;
+.uniteContent {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #2D2C76;
 }
 
-.activeTab{
+.mediaTab {
+    padding: 12px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.activeTab {
     background-color: #F5EFFF;
     border-radius: 8px;
+}
+
+.mediashrLine {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(236, 235, 248, 0) 0%, #ECEBF8 4.65%, #ECEBF8 94.04%, rgba(236, 235, 248, 0) 100%), linear-gradient(0deg, #ECEBF8, #ECEBF8);
 }

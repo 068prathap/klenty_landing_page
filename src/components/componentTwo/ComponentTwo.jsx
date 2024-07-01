@@ -8,38 +8,58 @@ import EmailActive from '../../assets/images/emailActiveIcon.svg'
 import SMSInActive from '../../assets/images/smsInActiveIcon.svg'
 import SMSActive from '../../assets/images/smsActiveIcon.svg'
 import { useState } from 'react'
+import MediaTabContent from '../mediaTabContent/MediaTabContent'
+import Img1 from '../../assets/images/Group 212875.png'
+import Img2 from '../../assets/images/Group 212910.png'
+import Img3 from '../../assets/images/Group 212888.png'
+import Img4 from '../../assets/images/Group 212910.png'
 
-function ComponentTwo(){
-    const [activeTab, setActiveTab]=useState(1)
+function ComponentTwo() {
+    const [activeTab, setActiveTab] = useState(1)
 
-    return(
+    return (
         <>
-            <div>
-                <div>
+            <div className='justify-content-center d-flex'>
+                <div className='innerMediaTabs'>
                     <p className='multiHeading'>MULTI-CHANNEL OUTREACH</p>
                     <p className='reactHeading'>Reach Prospects Wherever They’re Active</p>
                     <p className='uniteContent'>Unite your sales workflows across 5+ channels into one platform. With 1-click automation , blitz through activities across channels, saving hours.</p>
-                    <div className='d-flex'>
-                        <div className={`d-flex align-items-center ${activeTab===1 ? 'activeTab' : ''}`}>
-                            <img src={DialerInActive} alt="" />
-                            <img src={DialerActive} alt="" />
-                            <p>Powerful Sales Dialer</p>
+                    <div className='d-flex gap-5 justify-content-center'>
+                        <div className={`d-flex align-items-center mediaTab ${activeTab === 1 ? 'activeTab' : ''}`} onClick={() => { setActiveTab(1) }}>
+                            <img className={`${activeTab === 1 ? 'd-none' : 'd-block'}`} src={DialerInActive} alt="" />
+                            <img className={`${activeTab !== 1 ? 'd-none' : 'd-block'}`} src={DialerActive} alt="" />
+                            <p className='m-0'>Powerful Sales Dialer</p>
                         </div>
-                        <div className={`d-flex align-items-center ${activeTab===2 ? 'activeTab' : ''}`}>
-                            <img src={LinkedinInActive} alt="" />
-                            <img src={LinkedinActive} alt="" />
-                            <p>LinkedIn</p>
+                        <div className={`d-flex align-items-center mediaTab ${activeTab === 2 ? 'activeTab' : ''}`} onClick={() => { setActiveTab(2) }}>
+                            <img className={`${activeTab === 2 ? 'd-none' : 'd-block'}`} src={LinkedinInActive} alt="" />
+                            <img className={`${activeTab !== 2 ? 'd-none' : 'd-block'}`} src={LinkedinActive} alt="" />
+                            <p className='m-0'>LinkedIn</p>
                         </div>
-                        <div className={`d-flex align-items-center ${activeTab===3 ? 'activeTab' : ''}`}>
-                            <img src={EmailInActive} alt="" />
-                            <img src={EmailActive} alt="" />
-                            <p>Email</p>
+                        <div className={`d-flex align-items-center mediaTab ${activeTab === 3 ? 'activeTab' : ''}`} onClick={() => { setActiveTab(3) }}>
+                            <img className={`${activeTab === 3 ? 'd-none' : 'd-block'}`} src={EmailActive} alt="" />
+                            <img className={`${activeTab !== 3 ? 'd-none' : 'd-block'}`} src={EmailInActive} alt="" />
+                            <p className='m-0'>Email</p>
                         </div>
-                        <div className={`d-flex align-items-center ${activeTab===4 ? 'activeTab' : ''}`}>
-                            <img src={SMSInActive} alt="" />
-                            <img src={SMSActive} alt="" />
-                            <p>SMS And WhatsApp</p>
+                        <div className={`d-flex align-items-center mediaTab ${activeTab === 4 ? 'activeTab' : ''}`} onClick={() => { setActiveTab(4) }}>
+                            <img className={`${activeTab === 4 ? 'd-none' : 'd-block'}`} src={SMSInActive} alt="" />
+                            <img className={`${activeTab !== 4 ? 'd-none' : 'd-block'}`} src={SMSActive} alt="" />
+                            <p className='m-0'>SMS And WhatsApp</p>
                         </div>
+                    </div>
+                    <div className='mediashrLine'></div>
+                    <div>
+                        {activeTab === 1 &&
+                            <MediaTabContent setActiveTab={setActiveTab} heading={'Powerful Sales Dialer'} image={Img1} content={'Place call after call without dialing.Use voicemails to increase call connect rates.Sync all notes to CRM.'} />
+                        }
+                        {activeTab === 2 &&
+                            <MediaTabContent setActiveTab={setActiveTab} heading={'LinkedIn'} image={Img2} content={'Klenty types and personalizes LinkedIn connect requests, InMails, and Messages for you. Just hit send.'} />
+                        }
+                        {activeTab === 3 &&
+                            <MediaTabContent setActiveTab={setActiveTab} heading={'Email'} image={Img3} content={'Built for personalization-first sales teams. Insert prospect information, contextual snippets, videos, and well-researched openers into sales emails.'} />
+                        }
+                        {activeTab === 4 &&
+                            <MediaTabContent setActiveTab={setActiveTab} heading={'SMS And Whatsapp'} image={Img4} content={'Add quick SMS and WhatsApp follow-ups for mobile-savvy prospects (that’s everyone, btw).Gently nudge prospects towards a conversation.'} />
+                        }
                     </div>
                 </div>
             </div>
