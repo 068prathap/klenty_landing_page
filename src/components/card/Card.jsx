@@ -7,7 +7,7 @@ function Card({ cardImg, imgHeading, content, cardLink }) {
             <div className='cardContainer'>
                 <div className='cardImageContainer'>
                     <p className='cardImgHeading'>{imgHeading}</p>
-                    <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center align-items-center'>
                         <img className='cardImg' src={cardImg} alt="" />
                     </div>
                 </div>

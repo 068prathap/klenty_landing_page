@@ -6,19 +6,26 @@ function MediaTabContent({ heading, content, image, setActiveTab }) {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
+        var width = (window.innerWidth > 768) ? true : false;
+
         const interval = setInterval(() => {
-            if (progress <= 110) {
-                setProgress(progress + 3)
-            } else {
-                setActiveTab(pre => {
-                    if (pre === 4) {
-                        return 1
-                    }
-                    else {
-                        return pre + 1
-                    }
-                })
-                clearInterval(interval)
+            if (width) {
+                if (progress <= 110) {
+                    setProgress(progress + 3)
+                } else {
+                    setActiveTab(pre => {
+                        if (pre === 4) {
+                            return 1
+                        }
+                        else {
+                            return pre + 1
+                        }
+                    })
+                    clearInterval(interval)
+                }
+            }
+            else {
+                setActiveTab(5)
             }
         }, 100)
 
@@ -27,12 +34,12 @@ function MediaTabContent({ heading, content, image, setActiveTab }) {
 
     return (
         <>
-            <div className='d-flex'>
+            <div className='d-md-flex mediaTabContainer'>
                 <div className='mediaTabLeftContent'>
-                    <p className='mediaTabHeading'>{heading}</p>
-                    <p className='mediaTabContent'>{content}</p>
+                    <p className='mediaTabHeading mb-1'>{heading}</p>
+                    <p className='mediaTabContent mb-3'>{content}</p>
                     <p className='mediaTabLink'>LEARN MORE <img className='arrowLink' src={Arrow} width={'14px'} alt="" /></p>
-                    <div className="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div className="progress mediaTabProgress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                         <div style={{ width: `${progress}%` }} className={`progress-bar mediaLoader`}></div>
                     </div>
                 </div>

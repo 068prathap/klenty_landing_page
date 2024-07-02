@@ -17,22 +17,22 @@ function LandingPage() {
                 <Banner />
                 <CardsList />
             </div>
-            <div className='mb-5'>
+            <div className=''>
                 <ComponentOne />
             </div>
-            <div className='my-5'>
+            <div className=''>
                 <ComponentTwo />
             </div>
-            <div className='my-5'>
+            <div className=''>
                 <ComponentThree />
             </div>
-            <div className='my-5'>
+            <div className=''>
                 <ComponentFour />
             </div>
-            <div className='my-5'>
+            <div className=''>
                 <ComponentFive />
             </div>
-            <div className='my-5'>
+            <div className=''>
                 <ComponentSix />
             </div>
         </>

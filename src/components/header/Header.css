@@ -56,3 +56,22 @@
     font-weight: 600;
     font-size: 14px;
 }
+
+.menuBarVisibility{
+    display: none;
+}
+
+.headerTabsVisibility{
+    display: flex;
+}
+
+@media only screen and (max-width: 1075px){
+    .menuBarVisibility{
+        display: block;
+        cursor: pointer;
+    }
+
+    .headerTabsVisibility{
+        display: none;
+    }
+}

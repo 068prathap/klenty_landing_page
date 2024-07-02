@@ -10,12 +10,14 @@ function ComponentOne() {
                 </div>
                 <p className='b2bHeading'>B2B PROSPECTING DATA</p>
                 <p className='conquerHeading'>Conquer Your Market With Verified, Accurate Contact Data</p>
-                <p className='klentyContent'>Klenty swiftly searches through 10+ data providers in a Waterfall Enrichment Model and gives you the most precise emails, direct dial numbers and account insights.</p>
+                <div className='d-flex justify-content-center'>
+                    <p className='klentyContent'>Klenty swiftly searches through 10+ data providers in a Waterfall Enrichment Model and gives you the most precise emails, direct dial numbers and account insights.</p>
+                </div>
                 <div className='text-center'>
                     <button className='ButtonContain'>EXPLORE PROSPECTING DATA</button>
                 </div>
                 <div className='text-center'>
-                    <img src={Img} alt="" />
+                    <img className='componentOneImg' src={Img} alt="" />
                 </div>
             </div>
         </>

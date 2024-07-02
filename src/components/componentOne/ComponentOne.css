@@ -1,18 +1,20 @@
 .componentOne {
     background: linear-gradient(360deg, #EFEEFF 0%, #FFFFFF 100%);
+    margin-bottom: 130px;
+    padding: 0px 20px;
 }
 
 .uniqueHeading {
     font-size: 46px;
     font-weight: 600;
     line-height: 69px;
+    margin-bottom: 104px;
+    color: #0E0D59;
 }
 
 .uniqueHeading>span {
-    font-size: 46px;
     font-style: italic;
     font-weight: 700;
-    line-height: 69px;
     color: #0E0D59;
 }
 
@@ -22,6 +24,7 @@
     line-height: 21px;
     text-align: center;
     color: #504EE4;
+    margin-bottom: 16px;
 }
 
 .conquerHeading {
@@ -30,6 +33,7 @@
     line-height: 45px;
     text-align: center;
     color: #0E0D59;
+    margin-bottom: 8px;
 }
 
 .klentyContent {
@@ -38,4 +42,30 @@
     line-height: 24px;
     text-align: center;
     color: #2D2C76;
+    max-width: 770px;
+    margin-bottom: 32px;
+}
+
+.componentOneImg{
+    max-width: 1040px;
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1024px){
+    .banner{
+        margin-bottom: 0px;
+    }
+
+    .uniqueHeading{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .uniqueHeading{
+        font-size: 30px;
+        line-height: normal;
+    }
 }

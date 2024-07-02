@@ -5,7 +5,7 @@ import RightArrow from '../../assets/images/Line 4.svg'
 function ImageCard({ heading, imgCardIcon1, imgCardIcon2, iconText1, iconText2, persentage1, persentage2, img }) {
     return (
         <>
-            <div className='imageCard d-flex'>
+            <div className='imageCard d-md-flex'>
                 <div className='imgCardLeftContent'>
                     <p className='imgCardHeading'>{heading}</p>
                     <div className='imgCardLine'></div>

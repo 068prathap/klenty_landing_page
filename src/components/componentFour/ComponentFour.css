@@ -13,6 +13,8 @@
     line-height: 21px;
     text-align: center;
     color: #3EC5FF;
+    padding-top: 80px;
+    margin-bottom: 16px;
 }
 
 .notHeading {
@@ -22,6 +24,10 @@
     text-align: center;
     color: #FFFFFF;
     max-width: 633px;
+}
+
+.supportBoxListContainer {
+    margin-bottom: 150px;
 }
 
 .supportBoxList {
@@ -57,9 +63,10 @@
 .securityComponent {
     background-image: url('../../assets/images/Vector\ 1198.png');
     background-size: cover;
+    background-position: center;
 }
 
-.securityShield{
+.securityShield {
     left: 0;
     right: 0;
     top: -65px;
@@ -71,6 +78,7 @@
     line-height: 21px;
     text-align: center;
     color: #3EC5FF;
+    padding-top: 120px;
 }
 
 .enterpriceHeading {
@@ -79,6 +87,7 @@
     line-height: 48px;
     text-align: center;
     color: #FFFFFF;
+    max-width: 670px;
 }
 
 .securityContent {
@@ -87,14 +96,16 @@
     line-height: 24px;
     text-align: center;
     color: #9F9DED;
+    margin-bottom: 70px;
 }
 
 .securityList {
-    max-width: 1110px;
+    max-width: 1024px;
     gap: 72px;
+    padding-bottom: 110px;
 }
 
-.securityBox{
+.securityBox {
     text-align: center;
 }
 
@@ -110,4 +121,14 @@
     font-weight: 400;
     line-height: 19.04px;
     color: #9F9DED;
+}
+
+@media only screen and (max-width: 1024px) {
+    .supportBoxList {
+        flex-direction: column;
+    }
+
+    .securityList{
+        flex-direction: column;
+    }
 }

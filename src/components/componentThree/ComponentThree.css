@@ -1,3 +1,8 @@
+.componentThree{
+    margin-bottom: 160px;
+    padding: 0px 20px;
+}
+
 .howHeading {
     font-size: 40px;
     font-weight: 600;
@@ -13,5 +18,12 @@
     line-height: 27px;
     text-align: center;
     color: #2D2C76;
-    width: 850px;
+    max-width: 850px;
+    margin-bottom: 78px;
+}
+
+@media only screen and (max-width: 1024px){
+    .componentTwo {
+        margin-bottom: 70px;
+    }
 }

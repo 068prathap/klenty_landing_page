@@ -3,8 +3,32 @@
     font-weight: 600;
     line-height: 48px;
     color: #0E0D59;
+    max-width: 760px;
+    text-align: center;
 }
 
 .cradsList{
     gap: 23px;
+}
+
+.innerCradsList{
+    gap: 23px;
+}
+
+@media only screen and (max-width: 1200px){
+    .cradsList{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .innerCradsList{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .slider{
+        margin-bottom: 50px;
+    }
 }

@@ -1,0 +1,9 @@
+.carousel-indicators {
+    display: none !important;
+}
+
+.carousel-control-prev>span,
+.carousel-control-next>span {
+    background-color: #00000070 !important;
+    border-radius: 50%;
+}

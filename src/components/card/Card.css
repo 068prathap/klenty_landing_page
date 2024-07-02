@@ -1,10 +1,10 @@
 .cardContainer{
-    width: 281px;
+    max-width: 281px;
     cursor: pointer;
 }
 
 .cardImg{
-    width: 236px;
+    max-width: 236px;
     height: 163px;
     transition: all 0.5s;
 }
@@ -23,11 +23,12 @@
 }
 
 .cardImageContainer {
-    background: linear-gradient(331.89deg, #D5BBFF 12.21%, #3200F9 85.61%);
-    width: 281px;
+    background-image: url('../../assets/images/Rectangle\ 5168.png');
+    max-width: 281px;
     height: 269px;
     border-radius: 7.48px;
     padding: 16px;
+    margin-bottom: 16px;
 }
 
 .cardImgHeading {
@@ -42,6 +43,7 @@
     font-weight: 400;
     line-height: 21px;
     color: #3D3C7D;
+    margin-bottom: 20px;
 }
 
 .cardLink {

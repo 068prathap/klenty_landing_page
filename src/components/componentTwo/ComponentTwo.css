@@ -1,5 +1,9 @@
+.componentTwo{
+    margin-bottom: 140px;
+}
+
 .innerMediaTabs{
-    width: 90%;
+    width: 80%;
 }
 
 .multiHeading {
@@ -24,6 +28,8 @@
     line-height: 24px;
     text-align: center;
     color: #2D2C76;
+    max-width: 880px;
+    margin-bottom: 44px;
 }
 
 .mediaTab {
@@ -40,4 +46,43 @@
 .mediashrLine {
     height: 1px;
     background: linear-gradient(90deg, rgba(236, 235, 248, 0) 0%, #ECEBF8 4.65%, #ECEBF8 94.04%, rgba(236, 235, 248, 0) 100%), linear-gradient(0deg, #ECEBF8, #ECEBF8);
+    margin-bottom: 70px;
+}
+
+.mediaTabList{
+    display: flex;
+}
+
+@media only screen and (max-width: 1024px){
+    .componentOne{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .innerMediaTabs{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .mediaTabList{
+        display: none;
+    }
+
+    .mediashrLine{
+        display: none;
+    }
+
+    .mediaTabContainer{
+        display: block !important;
+    }
+
+    .mediaTabProgress{
+        display: none !important;
+    }
+
+    .mediaTabLeftContent, .mediaTabRighContent{
+        width: 100% !important;
+    }
 }

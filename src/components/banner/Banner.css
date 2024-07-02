@@ -24,6 +24,7 @@
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #504EE4;
+    margin-bottom: 12px;
 }
 
 .bannerText2 {
@@ -32,6 +33,7 @@
     font-weight: 400;
     line-height: 69.8px;
     font-family: font1;
+    margin-bottom: 8px;
 }
 
 .bannerText3 {
@@ -39,6 +41,7 @@
     font-weight: 400;
     line-height: 27px;
     color: #3B3A76;
+    margin-bottom: 32px;
 }
 
 .BannerButton {
@@ -47,6 +50,11 @@
 
 .bannerImg {
     padding: 4px 5px 39px 47px;
+}
+
+.clientsHeadingContainer {
+    margin-top: 48px;
+    margin-bottom: 40px;
 }
 
 .clientsHeading {
@@ -58,4 +66,67 @@
 
 .clientsHeading>span {
     font-weight: 700;
+}
+
+.slider {
+    margin-bottom: 110px;
+}
+
+.bannerContainer {
+    display: flex;
+}
+
+.bannerLeftContainer,
+.bannerRightContainer {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .bannerContainer {
+        display: block;
+    }
+
+    .bannerLeftContainer,
+    .bannerRightContainer {
+        width: 100%;
+    }
+
+    .borderBanner {
+        border: none;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .bannerImg {
+        padding: 0px;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .bannerImg>img {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .bannerText1 {
+        font-size: 14px;
+    }
+
+    .bannerText2 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .bannerText3 {
+        font-size: 16px;
+    }
+
+    .borderBanner {
+        padding: 5px;
+    }
+
+    .innerBanner {
+        padding-bottom: 0px;
+    }
 }

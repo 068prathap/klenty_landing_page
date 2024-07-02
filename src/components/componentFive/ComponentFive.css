@@ -1,3 +1,12 @@
+.componentFive {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.RatedHeadingContent {
+    margin-bottom: 80px;
+}
+
 .RatedHeading {
     font-size: 40px;
     font-weight: 600;
@@ -48,4 +57,15 @@
 
 .ratingCardRightContent {
     width: 45%;
+}
+
+@media only screen and (max-width: 650px) {
+    .ratingCard {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .ratingCardRightContent, .ratingCardLeftContent{
+        width: 100%;
+    }
 }
